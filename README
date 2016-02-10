@@ -1,0 +1,6 @@
+- Running make will make the simVM executable. make clean will clean the executable
+
+- My code runs with the command ./simVM 1024 16 7 3, it uses SPACES and NOT COMMAS
+
+- My code has no scheduling, however, the way I implemented it, all the addresses from one file will be dumped into the queue at once (So it might seem that there is scheduling if eg. process 1 dumps all it's addresses into the queue before process 2 manages to do so.). Because all the addresses are dumped in at once, the memory manager waits while one page fault is being handled to prevent the triggering of another page fault.
+
